@@ -79,14 +79,14 @@ article {
 
   .content-block {
     border-radius: $article-border-radius;
-    box-shadow: (0 0 1.5rem 0 rgba(0, 0, 0, .1));
+//    box-shadow: (0 0 1.5rem 0 rgba(0, 0, 0, .1));
 
     h2:first-child, h3:first-child {
       margin-top: 20px;
     }
 
     [theme=dark] & {
-      background: $global-background-secondary-color-dark;
+      background: rgba(255, 255, 255, 0);
     }
   }
 
@@ -454,17 +454,17 @@ a.post-tag-summary {
 
 .header-post {
 
-  box-shadow: 0 -0.9rem 1.5rem 0 rgba(0, 0, 0, 0.1);
+//  box-shadow: 0 -0.9rem 1.5rem 0 rgba(0, 0, 0, 0.1);
   margin: 6rem 1rem 0;
   max-width: 900px;
   width: 100%;
   min-width: 200px;
-  box-sizing: border-box;
-  border-radius: 10px 10px 0 0;
+//  box-sizing: border-box;
+//  border-radius: 10px 10px 0 0;
 
-  [theme=dark] & {
-    background: #1B1B1C;
-  }
+//  [theme=dark] & {
+//    background: #1B1B1C;
+//  }
 
   .single-title {
     margin: 0 !important;
@@ -616,7 +616,7 @@ footer {
 .theme-full, .theme-classic, .theme-wide {
   .content-block-first {
     margin-top: 0 !important;
-    box-shadow: 0 1.2rem 1.2rem 0 rgba(0,0,0,0.1);
+  //  box-shadow: 0 1.2rem 1.2rem 0 rgba(0,0,0,0.1);
   }
 }
 

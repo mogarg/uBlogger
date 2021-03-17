@@ -1,0 +1,17 @@
+{{- define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end -}}
+
+{{- define "content" -}}
+    {{- $params := .Scratch.Get "params" -}}
+    <div class="page single special">
+        {{- /* Title */ -}}
+        <h1 class="single-title animated pulse faster">
+            {{- .Title -}}
+        </h1>
+    </div>
+    <div class="page">
+        {{ with .Site.Data.resume }}
+          {{ partial "resume/header.html" .}}
+          {{ partial "resume/section.html" . }}
+        {{ end }}
+    </div>
+{{- end -}}
